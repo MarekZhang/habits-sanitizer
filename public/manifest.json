@@ -19,5 +19,11 @@
       "js": ["test.js"]
     }
   ],
-  "permissions": ["tabs", "storage"]
+  "permissions": ["tabs", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    { "resources": ["block.html"], "matches": ["http://*/*", "https://*/*"] }
+  ]
 }
