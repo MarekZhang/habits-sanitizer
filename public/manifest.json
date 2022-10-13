@@ -1,0 +1,23 @@
+{
+  "name": "Habit Sanitizer",
+  "description": "The statistics of any Medium author.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Open Medium Any Authors Stats"
+  },
+  "icons": {
+    "16": "logo192.png",
+    "48": "logo192.png",
+    "128": "logo192.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["test.js"]
+    }
+  ],
+  "permissions": ["tabs", "storage"]
+}
